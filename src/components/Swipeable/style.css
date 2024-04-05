@@ -1,0 +1,44 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow: hidden;
+    width: 50%;
+    margin: 0 auto;
+  }
+ 
+  .mid {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid gray;
+    transition: width 0.5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+  }
+   
+  .left, .right {
+    width: fit-content;
+    color: white;
+    border: 1px solid gray;
+    padding: 1rem;
+    background-color: black;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .left {
+    background-color: black;
+  }
+  
+  .right {
+    background-color: black;
+  }
+  
+  .left.active,
+  .right.active {
+    z-index: 2;
+  }
+  
